@@ -186,3 +186,5 @@ poetry.toml
 
 # Mac OS
 .DS_Store
+
+.vscode
