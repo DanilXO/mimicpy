@@ -184,7 +184,7 @@ poetry.toml
 .history
 .ionide
 
-# Mac OS
+# project
 .DS_Store
-
 .vscode
+scenarios/
