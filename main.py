@@ -1,14 +1,17 @@
 from time import sleep
 
-from mimicpy.writer import write
+from pynput.keyboard import Key, Controller as KeyboardController
+
+from mimicpy.actors import Trainer, Actor
 
 
 def main():
+    trainer = Trainer()
+    trainer.learn()
+    saved_path = trainer.save_scenario()
     sleep(3)
-    write("Work for me, I'm not ready yet.")
-
+    actor = Actor()
+    actor.play_scenario(saved_path)
 
 if __name__ == "__main__":
     main()
-
-Work for me, 
